@@ -1,7 +1,10 @@
+import Navbar from "./components/Navbar";
+
+
 function App() {
   return (
-    <div className="App text-3xl font-bold underline">
-      Hello World
+    <div className="App">
+      <Navbar />
     </div>
   );
 }

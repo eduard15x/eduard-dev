@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .nav-list li {
+        @apply px-5;
+        @apply cursor-pointer;
+    }
+
+    .nav-list-mobile li {
+        @apply py-4;
+        @apply text-2xl;
+    }
+}
