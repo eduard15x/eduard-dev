@@ -28,3 +28,14 @@
         hsla(242, 74%, 61%, 0.8)
     )!important;
 }
+
+.tagcloud--item {
+    color: #00ffffff;
+    cursor: default;
+}
+
+.tagcloud--item:hover {
+    color: #ff6347;
+    cursor: default;
+    font-size: 20px;
+}

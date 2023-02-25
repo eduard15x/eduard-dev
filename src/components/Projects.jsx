@@ -20,12 +20,12 @@ const Projects = () => {
                                 ReactJS APPLICATION
                             </span>
                             <div className="pt-8 text-center">
-                                <a href="#" className="mx-4">
+                                <a href="http://localhost:3000/" className="mx-4">
                                     <button className="text-center rounded-lg w-[75px] p-3 bg-white text-gray-700 font-bold text-lg hover:opacity-75 duration-300">
                                         Demo
                                     </button>
                                 </a>
-                                <a href="#" className="mx-4">
+                                <a href="http://localhost:3000/" className="mx-4">
                                     <button className="text-center rounded-lg w-[75px] p-3 bg-white text-gray-700 font-bold text-lg hover:opacity-75 duration-300">
                                         Code
                                     </button>
@@ -42,12 +42,12 @@ const Projects = () => {
                                 ReactJS APPLICATION
                             </span>
                             <div className="pt-8 text-center">
-                                <a href="#" className="mx-4">
+                                <a href="http://localhost:3000/" className="mx-4">
                                     <button className="text-center rounded-lg w-[75px] p-3 bg-white text-gray-700 font-bold text-lg hover:opacity-75 duration-300">
                                         Demo
                                     </button>
                                 </a>
-                                <a href="#" className="mx-4">
+                                <a href="http://localhost:3000/" className="mx-4">
                                     <button className="text-center rounded-lg w-[75px] p-3 bg-white text-gray-700 font-bold text-lg hover:opacity-75 duration-300">
                                         Code
                                     </button>

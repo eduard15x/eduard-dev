@@ -1,12 +1,13 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
 // import ProfilePic from '../assets/Profile.png';
 import { Link } from 'react-scroll';
+import TextSphere from './TextSphere';
 
 const Home = () => {
     return (
         <div name="home" className="w-full h-screen bg-slate-900">
             {/* Container */}
-            <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+            <div className="max-w-[1000px] mx-auto xl:ml-[50px] 2xl:ml-[100px] 3xl:ml-[175px] pb-[280px] xl:pb-0 px-8 flex flex-col justify-center h-full">
                 {/* Intro title */}
                 <h1 className="flex flex-col">
                     <span className="text-pink-600 text-2xl sm:text-3xl">
@@ -33,6 +34,7 @@ const Home = () => {
                 {/* <img className='hidden lg:block absolute w-[350px] right-[5%] rounded-full'
                     src={ ProfilePic } alt="Profile"
                 /> */}
+                <TextSphere />
             </div>
         </div>
     );
