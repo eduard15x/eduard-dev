@@ -1,5 +1,5 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import ProfilePic from '../assets/Profile.png';
+// import ProfilePic from '../assets/Profile.png';
 
 const Home = () => {
     return (
