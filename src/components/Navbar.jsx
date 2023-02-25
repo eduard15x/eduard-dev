@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../assets/Logo.png';
+import { Link } from 'react-scroll';
+
 
 const Navbar = () => {
     const [ mobileNav, setMobileNav ] = useState(false);
 
-    const openNav = () => {
+    const handleNav = () => {
         setMobileNav(mobileNav ? false : true);
     };
 
@@ -16,16 +18,40 @@ const Navbar = () => {
 
             {/* Menu */}
             <ul className='hidden nav-list md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li>
+                    <Link to="home" smooth={true} duration={500}>
+                        Home
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="about" smooth={true} duration={500}>
+                        About
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="projects" smooth={true} duration={500}>
+                      Projects
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="skills" smooth={true} duration={500}>
+                       Skills
+                    </Link>
+                </li>
+
+                <li>
+                    <Link to="contact"smooth={true} duration={500}>
+                        Contact
+                    </Link>
+                </li>
+
             </ul>
 
             {/* Hamburger icon */}
-            <div className='md:hidden cursor-pointer z-10' onClick={openNav}>
+            <div className='md:hidden cursor-pointer z-10' onClick={handleNav}>
                 { mobileNav ? <FaTimes /> : <FaBars /> }
             </div>
 
@@ -35,7 +61,11 @@ const Navbar = () => {
                 <li>Home</li>
                 <li>About</li>
                 <li>Experience</li>
-                <li>Skills</li>
+                <li>
+                    <Link to="skills" smooth={true} duration={500} onClick={handleNav}>
+                       Skills
+                    </Link>
+                </li>
                 <li>Projects</li>
                 <li>Contact</li>
             </ul>

@@ -1,5 +1,6 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
 // import ProfilePic from '../assets/Profile.png';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
@@ -22,12 +23,12 @@ const Home = () => {
                     dadajb  iag iuuo q 9 9 q q989fq hj 0q0f  qfqhf90q qfh9 h0h9qh q 090q9.
                 </p>
                 {/* Button navigate to next section */}
-                <div>
+                <Link to="about" smooth={true} duration={500}>
                     <button className='text-white group border-2 px-5 py-3 my-2 flex items-center hover:bg-pink-600'>
-                        <span>Skills</span>
+                        <span>About</span>
                         <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300'/>
                     </button>
-                </div>
+                </Link>
                 {/* Homepage Image */}
                 {/* <img className='hidden lg:block absolute w-[350px] right-[5%] rounded-full'
                     src={ ProfilePic } alt="Profile"
