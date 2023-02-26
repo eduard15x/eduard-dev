@@ -2,12 +2,6 @@ import { useEffect } from "react";
 import TagCloud from "TagCloud";
 
 const TextSphere = () => {
-    const width = window.innerWidth > 1700 ? 350 
-                : window.innerWidth > 1450 ? 300 
-                : window.innerWidth > 1350 ? 250 
-                : window.innerWidth > 1250 ? 210 
-                : window.innerWidth > 600 ? 190 : 145
-
     useEffect(() => {
         return () => {
             const container = '.tagcloud';
