@@ -1,0 +1,34 @@
+[
+    {
+        "skill": "JavaScript",
+        "icon": "https://cdn-icons-png.flaticon.com/512/1199/1199124.png"
+    },
+    {
+        "skill": "HTML",
+        "icon": "https://cdn-icons-png.flaticon.com/512/1051/1051277.png"
+    },
+    {
+        "skill": "CSS",
+        "icon": "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+    },
+    {
+        "skill": "React",
+        "icon": "https://cdn-icons-png.flaticon.com/512/875/875209.png"
+    },
+    {
+        "skill": "Node.js",
+        "icon": "https://cdn-icons-png.flaticon.com/512/919/919825.png"
+    },
+    {
+        "skill": "MongoDB",
+        "icon": "https://cdn-icons-png.flaticon.com/512/689/689360.png"
+    },
+    {
+        "skill": "Bootstrap",
+        "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
+    },
+    {
+        "skill": "Github",
+        "icon": "https://cdn-icons-png.flaticon.com/512/2504/2504911.png"
+    }
+]

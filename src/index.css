@@ -24,18 +24,18 @@
 .content-div:hover {
     background-image: linear-gradient(
         to right,
-        rgba(112, 157, 255, 0.8),
-        hsla(242, 74%, 61%, 0.8)
+        rgba(102, 252, 242, 0.723),
+        rgba(18, 186, 175, 0.638)
     )!important;
 }
 
 .tagcloud--item {
-    color: #00ffffff;
+    color: #50bdb7;
     cursor: default;
 }
 
 .tagcloud--item:hover {
-    color: #ff6347;
+    color: #66FCF1;
     cursor: default;
     font-size: 20px;
 }

@@ -33,3 +33,7 @@ md: (768px) – This breakpoint is used for screens with a width of at least 768
 lg: (1024px) – This breakpoint is used for screens with a width of at least 992px, such as large desktop monitors.
 xl: (1280px) – This breakpoint is used for screens with a width of at least 1200px, such as extra-large desktop monitors.
 `xxl`: (1450px)
+
+
+Color Palette
+https://colorhunt.co/palette/222831393e4600adb5eeeeee

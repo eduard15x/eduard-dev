@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Logo from '../assets/Logo.png';
+import LogoLight from '../assets/Logo-Light.png';
 import { Link } from 'react-scroll';
-
+import navLinks from '../data/navLinks.json';
 
 const Navbar = () => {
     const [ mobileNav, setMobileNav ] = useState(false);
@@ -12,62 +12,40 @@ const Navbar = () => {
     };
 
     return (
-        <div className="fixed w-full h-[75px] bg-black flex justify-between items-center px-4 text-gray-600 z-[9]">
+        <div className="fixed w-full h-[75px] bg-black flex justify-between items-center px-4 text-[#9c9d9e] z-[9]">
             {/* Logo */}
-            <img src={ Logo } alt="Logo" className="w-[50px]"/>
+            <img src={ LogoLight } alt="Logo" className="w-[40px] rounded-[50%] opacity-90 lg:ml-4 z-50" />
 
-            {/* Menu */}
+            {/* Menu large screens */}
             <ul className='hidden nav-list md:flex'>
-                <li>
-                    <Link to="home" smooth={true} duration={500}>
-                        Home
-                    </Link>
-                </li>
-
-                <li>
-                    <Link to="about" smooth={true} duration={500}>
-                        About
-                    </Link>
-                </li>
-
-                <li>
-                    <Link to="projects" smooth={true} duration={500}>
-                      Projects
-                    </Link>
-                </li>
-
-                <li>
-                    <Link to="skills" smooth={true} duration={500}>
-                       Skills
-                    </Link>
-                </li>
-
-                <li>
-                    <Link to="contact"smooth={true} duration={500}>
-                        Contact
-                    </Link>
-                </li>
-
+                {
+                    navLinks.map((item) => (
+                        <li className='mx-10 hover:text-white'>
+                            <Link to={ item.linkTo } smooth={true} duration={500}>
+                                { item.linkName }
+                            </Link>
+                        </li>
+                    ))
+                }
             </ul>
 
             {/* Hamburger icon */}
-            <div className='md:hidden cursor-pointer z-10' onClick={handleNav}>
+            <div className='md:hidden cursor-pointer z-10 hover:text-white' onClick={handleNav}>
                 { mobileNav ? <FaTimes /> : <FaBars /> }
             </div>
 
             {/* Mobile Menu */}
             <ul className={`nav-list-mobile ${mobileNav ? 'flex' : 'hidden'} absolute top-0 left-0 w-full h-screen bg-black flex-col 
                             justify-center items-center`}>
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>
-                    <Link to="skills" smooth={true} duration={500} onClick={handleNav}>
-                       Skills
-                    </Link>
-                </li>
-                <li>Projects</li>
-                <li>Contact</li>
+                {
+                    navLinks.map((item) => (
+                        <li className="hover:text-white">
+                            <Link to={ item.linkTo } smooth={true} duration={500} onClick={handleNav}>
+                                { item.linkName }
+                            </Link>
+                        </li>
+                    ))
+                }
             </ul>
         </div>
     );

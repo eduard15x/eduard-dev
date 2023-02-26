@@ -5,27 +5,26 @@ import TextSphere from './TextSphere';
 
 const Home = () => {
     return (
-        <div name="home" className="w-full h-screen bg-slate-900">
+        <div name="home" className="w-full h-screen bg-[#090909]">
             {/* Container */}
             <div className="max-w-[1000px] mx-auto xl:ml-[50px] 2xl:ml-[100px] 3xl:ml-[175px] pb-[280px] xl:pb-0 px-8 flex flex-col justify-center h-full">
                 {/* Intro title */}
                 <h1 className="flex flex-col">
-                    <span className="text-pink-600 text-2xl sm:text-3xl">
+                    <span className="text-[#50bdb7] text-2xl sm:text-3xl font-bold">
                         Hi there,
                     </span>
-                    <span className="text-yellow-600 text-4xl sm:text-7xl font-bold">
+                    <span className="text-[#66FCF1] text-4xl sm:text-7xl font-bold">
                         I'm Eduard Precup.
                     </span>
                 </h1>
                 {/* Short intro description */}
-                <p className="text-#8892b0 sm:text-1xl py-4 max-w-[700px]">
+                <p className="text-[#9c9d9e] text-lg py-3 sm:py-4 md:py-5 max-w-[700px]">
                     I am a frontend developer and currently I focus on building responsive
-                    full-stack web applications. Lorem ispsum ohole danej sle n adkd dosoo
-                    dadajb  iag iuuo q 9 9 q q989fq hj 0q0f  qfqhf90q qfh9 h0h9qh q 090q9.
+                    full-stack web applications.
                 </p>
                 {/* Button navigate to next section */}
                 <Link to="about" smooth={true} duration={500}>
-                    <button className='text-white group border-2 px-5 py-3 my-2 flex items-center hover:bg-pink-600'>
+                    <button className='relative z-[3] text-white group border-2 border-[#50bdb7] px-5 py-3 my-2 flex items-center hover:bg-[#2c3541]'>
                         <span>About</span>
                         <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300'/>
                     </button>

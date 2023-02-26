@@ -1,0 +1,22 @@
+[
+    {
+        "linkName": "Home",
+        "linkTo": "home"
+    },
+    {
+        "linkName": "About",
+        "linkTo": "about"
+    },
+    {
+        "linkName": "Projects",
+        "linkTo": "projects"
+    },
+    {
+        "linkName": "Skills",
+        "linkTo": "skills"
+    },
+    {
+        "linkName": "Contact",
+        "linkTo": "contact"
+    }
+]
