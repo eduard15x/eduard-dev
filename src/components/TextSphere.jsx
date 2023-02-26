@@ -15,7 +15,7 @@ const TextSphere = () => {
                            'Express.js', 'MongoDB', 'JSON', 'Github', 'Sourcetree', 'Bitbucket', 'Jira', 'Confluence', 'npm'];
 
             const options = {
-                radius: width,
+                radius: 300,
                 maxSpeed: 'normal',
                 initSpeed: 'normal',
                 keep: true
@@ -23,7 +23,8 @@ const TextSphere = () => {
 
             TagCloud(container, texts, options);
         }
-    }, [width]);
+        // eslint-disable-next-line 
+    }, []);
     
     return (
         <div className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[2]
