@@ -1,9 +1,10 @@
-import MoviesSlider from '../assets/movieSlider-project.png';
-import Ecommerce1 from '../assets/ecommerce1-project.png';
-import Booking from '../assets/booking-project.png';
-import JokeTeller from '../assets/jokeTeller-project.png';
-import ToDoList from '../assets/toDoList-project.png';
-import Portofolio from '../assets/portofolio-project.png';
+import CarouselMobile from '../components/CarouselMobile';
+import MoviesSlider from '../assets/large-screens/movieSlider-project.png';
+import Ecommerce1 from '../assets/large-screens/ecommerce1-project.png';
+import Booking from '../assets/large-screens/booking-project.png';
+import quoteGenerator from '../assets/large-screens/quoteGenerator-project.png';
+import ToDoList from '../assets/large-screens/toDoList-project.png';
+import Portofolio from '../assets/large-screens/portofolio-project.png';
 
 const Projects = () => {
     const projects = [
@@ -11,24 +12,24 @@ const Projects = () => {
         {projectName: "Booking App", image: Booking, demo: "", code: "https://github.com/eduard15x/school-application-ulbs"},
         {projectName: "Movies Slider", image: MoviesSlider, demo: "", code: "https://github.com/eduard15x/Slider-Movies-Spoilers"},
         {projectName: "eCommerce Page", image: Ecommerce1, demo: "", code: "https://github.com/eduard15x/OSF-Academy-eCommerce-Frontend-Project"},
-        {projectName: "Joke-Teller App", image: JokeTeller, demo: "", code: "https://github.com/eduard15x/40-projects-with-JS-created-by-code-along/tree/main/Joke%20teller"},
+        {projectName: "Quote Generator", image: quoteGenerator, demo: "", code: "https://github.com/eduard15x/quote-generator-app"},
         {projectName: "Personal Portofolio", image: Portofolio, demo: "", code: "https://github.com/eduard15x/eduard-dev"},
     ];
 
     return (
-        <div name="projects" className="w-full md:h-screen text-[#9c9d9e] bg-[#090909]">
+        <div name="projects" className="w-full h-screen text-[#9c9d9e] bg-[#090909]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-                <div className="pb-8">
-                    <p className="text-4xl font-bold inline border-b-4 text-gray border-[#66FCF1]">Projects</p>
-                    <p className="py-6">Check out some of my recent projects below</p>
+                <div className="pb-0 md:pb-10 pt-[70px] mx-auto text-center">
+                    <p className="text-4xl font-bold inline border-b-4 text-gray border-[#66fcf2]">Projects</p>
+                    <p className="py-4">Check out some of my recent projects below</p>
                 </div>
                 
-                {/* Container */}
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4" >
+                {/* Container on medium screens and heigher*/}
+                <div className="hidden sm:grid sm:grid-cols-2 md:grid-cols-3 gap-4" >
                     {/* Grid item */}
                     {
                         projects.map((el) => (
-                            <div style={{backgroundImage: `url(${el.image})`}}
+                            <div key={el.projectName} style={{backgroundImage: `url(${el.image})`}}
                                 className="shadow-lg shadow-black group container rounded-md flex justify-center items-center mx-auto content-div">
                                 {/* Hover effects */}
                                 <div className="opacity-0 group-hover:opacity-100 duration-300">
@@ -47,6 +48,8 @@ const Projects = () => {
                         ))
                     }
                 </div>
+                {/* Carousel for mobiles */}
+                <CarouselMobile />
             </div>            
         </div>
     );

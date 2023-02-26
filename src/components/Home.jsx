@@ -24,15 +24,12 @@ const Home = () => {
                 </p>
                 {/* Button navigate to next section */}
                 <Link to="about" smooth={true} duration={500}>
-                    <button className='relative z-[3] text-white group border-2 border-[#50bdb7] px-5 py-3 my-2 flex items-center hover:bg-[#2c3541]'>
+                    <button className='relative z-[3] text-white group border-2 border-[#50bdb7] px-5 py-3 my-2 flex items-center bg-[#2c3541] hover:bg-[#50bdb7]'>
                         <span>About</span>
                         <HiArrowNarrowRight className='ml-3 group-hover:rotate-90 duration-300'/>
                     </button>
                 </Link>
-                {/* Homepage Image */}
-                {/* <img className='hidden lg:block absolute w-[350px] right-[5%] rounded-full'
-                    src={ ProfilePic } alt="Profile"
-                /> */}
+                {/* 3D TextSphere */}
                 <TextSphere />
             </div>
         </div>

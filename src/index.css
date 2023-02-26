@@ -21,11 +21,11 @@
     height: 200px;
 }
 
-.content-div:hover {
+.mobile-content-div:hover, .content-div:hover {
     background-image: linear-gradient(
-        to right,
-        rgba(102, 252, 242, 0.723),
-        rgba(18, 186, 175, 0.638)
+        #090909,
+        #50bdb7,
+        #090909
     )!important;
 }
 
@@ -38,4 +38,8 @@
     color: #66FCF1;
     cursor: default;
     font-size: 20px;
+}
+
+.activeEl {
+    color: red;
 }

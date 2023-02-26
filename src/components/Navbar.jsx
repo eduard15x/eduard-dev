@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import LogoLight from '../assets/Logo-Light.png';
+import Logo from '../assets/Logo.png';
 import { Link } from 'react-scroll';
 import navLinks from '../data/navLinks.json';
 
@@ -12,15 +12,15 @@ const Navbar = () => {
     };
 
     return (
-        <div className="fixed w-full h-[75px] bg-black flex justify-between items-center px-4 text-[#9c9d9e] z-[9]">
+        <div className="fixed w-full h-[75px] bg-[#020202] flex justify-between items-center px-4 text-[#9c9d9e] z-[9]">
             {/* Logo */}
-            <img src={ LogoLight } alt="Logo" className="w-[40px] rounded-[50%] opacity-90 lg:ml-4 z-50" />
+            <img src={ Logo } alt="Logo" className="w-[40px] rounded-[50%] opacity-90 lg:ml-4 z-50" />
 
             {/* Menu large screens */}
             <ul className='hidden nav-list md:flex'>
                 {
                     navLinks.map((item) => (
-                        <li className='mx-10 hover:text-white'>
+                        <li key={item.linkTo} className='mx-10 hover:text-white'>
                             <Link to={ item.linkTo } smooth={true} duration={500}>
                                 { item.linkName }
                             </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
                             justify-center items-center`}>
                 {
                     navLinks.map((item) => (
-                        <li className="hover:text-white">
+                        <li key={item.linkTo} className="hover:text-white">
                             <Link to={ item.linkTo } smooth={true} duration={500} onClick={handleNav}>
                                 { item.linkName }
                             </Link>
