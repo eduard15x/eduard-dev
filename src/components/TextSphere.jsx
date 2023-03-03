@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import TagCloud from "@frank-mayer/react-tag-cloud";
 
 
